@@ -1,9 +1,14 @@
 // utils
 @import "./utils/visually-hidden";
+@import "./utils/mixins";
 
 // base styles
 @import "./base/base";
 
 // components
+@import "./components/header";
+@import "./components/container";
 @import "./components/backdrop";
 @import "./components/label";
+@import "./components/galery";
+@import "./components/footer";

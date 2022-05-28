@@ -1,0 +1,131 @@
+.galery {
+  width: 100%;
+
+  &__title {
+    visibility: hidden;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px;
+    margin-bottom: 24px;
+
+    @include mq(tablet) {
+      grid-template-columns: repeat(3, 1fr);
+      margin-bottom: 32px;
+    }
+
+    @include mq(desktop) {
+      grid-template-columns: repeat(4, 1fr);
+      margin-bottom: 40px;
+    }
+  }
+
+  &__food {
+    padding: 10px;
+    box-shadow: 0 0 12px #2d456280;
+    border-radius: 8px;
+    transition: all ease 0.5s;
+
+    &:hover {
+      box-shadow: 0 0 22px #2d45628c;
+    }
+  }
+
+  &__box {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  &__img {
+    width: 70%;
+  }
+
+  &__center {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    font-size: 14px;
+    margin-bottom: 10px;
+    min-height: 32px;
+
+    @include mq(tablet) {
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
+
+    @include mq(desktop) {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__price {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+
+    @include mq(tablet) {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+    @include mq(desktop) {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+    background-color: #ef6500;
+    border-radius: 8px;
+    color: white;
+    transition: all ease 0.5s;
+    border: none;
+    font-size: 13px;
+    line-height: 1.2;
+
+    @include mq(tablet) {
+      font-size: 14px;
+      line-height: 1.2;
+    }
+
+    @include mq(desktop) {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+    &:hover {
+      background-color: #79c400;
+      box-shadow: 0 0 22px #79c400;
+      cursor: pointer;
+    }
+  }
+
+  &__item--button {
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+  }
+}
