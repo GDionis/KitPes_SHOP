@@ -19,13 +19,44 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
+      <div class="container header__container">
         <div class="wrapper">
           <a href="#" class="link logo">
-            <img class="logo_img" src="./images/KitPes_LOGO.svg" alt="" />
-            <span class="logo_text">Зоомагазин "KitPes"</span>
+            <img class="logo__img" src="./images/KitPes_LOGO.svg" alt="" />
+            <span class="logo__text">Зоомагазин "KitPes"</span>
           </a>
         </div>
+        <nav class="nav">
+          <ul class="list nav__list">
+            <li class="nav__item">
+              <a class="link nav__link" href="./index.html">Головна</a>
+            </li>
+            <li class="nav__item">
+              <a class="link nav__link" href="#">Про нас</a>
+            </li>
+            <li class="nav__item">
+              <a class="link nav__link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <button
+          class="btn-menu"
+          type="button"
+          aria-label="Кнопка меню"
+          aria-expanded="false"
+          data-menu-button
+        >
+          <svg class="btn-menu__icon" width="40px" height="40px">
+            <use
+              class="btn-menu__icon-open"
+              href="./images/icon-menu.svg#btn-menu"
+            ></use>
+            <use
+              class="btn-menu__icon-close"
+              href="./images/icon-menu.svg#btn-close"
+            ></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -224,7 +255,6 @@
                   </li>
                 </ul>
               </div>
-
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
@@ -1244,6 +1274,79 @@
         </div>
       </div>
     </div>
+    <div class="mobile-overlay" data-menu>
+      <div class="mobile-menu">
+        <nav class="mobile-nav">
+          <ul class="list mobile-nav__list">
+            <li class="mobile-nav__item">
+              <a class="link mobile-nav__active" href="./index.html">Головна</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="link mobile-nav__link" href="#">Про нас</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="link mobile-nav__link" href="#">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mobile-menu__contacts">
+          <ul class="list">
+            <li class="">
+              <a class="link mobile-menu__link" href="tel:+380961111111">
+                +38 096 111 11 11</a
+              >
+            </li>
+            <li class="">
+              <a
+                class="link mobile-menu__links"
+                href="mailto:info@devstudio.com"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <ul class="list socials">
+          <li class="socials__item">
+            <a
+              class="link socials__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Instagram</a
+            >
+          </li>
+          <li class="socials__item">
+            <a
+              class="link socials__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Twitter</a
+            >
+          </li>
+          <li class="socials__item">
+            <a
+              class="link socials__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >Facebook</a
+            >
+          </li>
+          <li class="socials__item">
+            <a
+              class="link socials__link"
+              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -1,0 +1,90 @@
+.header__container {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+
+  @include mq(tablet) {
+    padding-top: 20px;
+  }
+}
+
+.wrapper {
+  margin-right: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+
+  &__img {
+    width: 50px;
+  }
+
+  &__text {
+    margin-left: 14px;
+    font-weight: 500;
+    font-size: 15px;
+    background-image: linear-gradient(
+        217deg,
+        rgba(255, 0, 0, 0.8),
+        rgba(255, 0, 0, 0) 70.71%
+      ),
+      linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%),
+      linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include mq(tablet) {
+      margin-left: 16px;
+      font-weight: 600;
+      font-size: 20px;
+    }
+
+    @include mq(desktop) {
+      margin-left: 20px;
+      font-weight: 700;
+      font-size: 30px;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    margin-right: 30px;
+    font-weight: 500;
+    font-size: 16px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+
+    @include mq(tablet) {
+      margin-right: 30px;
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    @include mq(desktop) {
+      margin-right: 50px;
+      font-weight: 700;
+      font-size: 30px;
+    }
+  }
+
+  &__link:hover,
+  &__link:focus {
+    color: rgba(45, 179, 41, 0.781);
+  }
+}
