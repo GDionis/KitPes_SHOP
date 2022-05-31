@@ -653,7 +653,7 @@ img {
 }
 
 .galery__subtitle {
-  font-size: 14px;
+  font-size: 16px;
   margin-bottom: 10px;
   min-height: 32px;
 }
@@ -679,7 +679,7 @@ img {
 
 .galery__text {
   font-weight: 500;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
@@ -752,11 +752,10 @@ img {
   justify-content: center;
   align-items: center;
   position: fixed;
-  min-height: 70px;
-  min-width: 70px;
+  min-height: 80px;
+  min-width: 80px;
   right: 20px;
   bottom: 40px;
-  padding: 15px;
   font-weight: 800;
   font-size: 12px;
   text-transform: uppercase;
