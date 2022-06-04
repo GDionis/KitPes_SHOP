@@ -7,14 +7,16 @@
 }
 
 .btn {
-  padding: 15px;
+  padding: 10px;
+  margin-right: 5px;
   width: 100%;
   border-radius: 8px;
   transition: all ease 0.5s;
   text-align: center;
   border: none;
   outline: none;
-  background-color: #f1f1f1;
+  color: white;
+  background-color: #ef6500;
   cursor: pointer;
   display: block;
   font-size: 12px;
@@ -34,4 +36,24 @@
 
 .btn:hover {
   background-color: #ddd;
+}
+
+.dropdown-content {
+  display: flex;
+  width: 100%;
+
+  z-index: 1;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+
+  @include mq(tablet) {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  @include mq(desktop) {
+    font-size: 16px;
+    line-height: 1.4;
+  }
 }
