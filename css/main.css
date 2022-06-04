@@ -197,6 +197,7 @@ img {
 
 .btn {
   padding: 15px;
+  width: 100%;
   border-radius: 8px;
   transition: all ease 0.5s;
   text-align: center;
