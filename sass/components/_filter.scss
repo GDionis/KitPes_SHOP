@@ -1,0 +1,36 @@
+.filterDiv {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.btn {
+  padding: 15px;
+  border-radius: 8px;
+  transition: all ease 0.5s;
+  text-align: center;
+  border: none;
+  outline: none;
+  background-color: #f1f1f1;
+  cursor: pointer;
+  display: block;
+  font-size: 12px;
+  line-height: 1;
+  text-decoration: none;
+
+  @include mq(tablet) {
+    font-size: 14px;
+    line-height: 1.2;
+  }
+
+  @include mq(desktop) {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+.btn:hover {
+  background-color: #ddd;
+}

@@ -21,7 +21,7 @@
     <header class="header">
       <div class="container header__container">
         <div class="wrapper">
-          <a href="#" class="link logo">
+          <a href="./index.html" class="link logo">
             <img class="logo__img" src="./images/KitPes_LOGO.svg" alt="" />
             <span class="logo__text">Зоомагазин "KitPes"</span>
           </a>
@@ -39,7 +39,19 @@
             </li>
           </ul>
         </nav>
-        <button
+        <div id="myBtnContainer" class="dropdown">
+          <button class="dropbtn">Фільтр</button>
+          <div class="dropdown-content">
+            <!-- <button class="btn active" onclick="filterSelection('all')">
+              Показати все
+            </button> -->
+            <button class="btn" onclick="filterSelection('cats')">Коти</button>
+            <button class="btn" onclick="filterSelection('dogs')">
+              Собаки
+            </button>
+          </div>
+        </div>
+        <!-- <button
           class="btn-menu"
           type="button"
           aria-label="Кнопка меню"
@@ -56,7 +68,7 @@
               href="./images/icon-menu.svg#btn-close"
             ></use>
           </svg>
-        </button>
+        </button> -->
       </div>
     </header>
     <main>
@@ -64,7 +76,7 @@
         <div class="container">
           <h1 class="galery__title">Корм для тварин</h1>
           <ul class="list galery__list">
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img
                   class="galery__img"
@@ -89,13 +101,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -105,7 +118,7 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food dogs filterDiv">
               <div class="galery__box">
                 <img class="galery__img" src="images/Kitten.png" alt="" />
               </div>
@@ -126,13 +139,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -142,7 +156,7 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img
                   src="images/Neutered_Satiety_Balance.png"
@@ -168,13 +182,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -184,7 +199,7 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img src="images/Ageing_12+.png" alt="" class="galery__img" />
               </div>
@@ -205,13 +220,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -221,7 +237,7 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img src="images/FIT_32.png" alt="" class="galery__img" />
               </div>
@@ -242,13 +258,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -258,7 +275,7 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img src="images/Oral_Care.png" alt="" class="galery__img" />
               </div>
@@ -279,13 +296,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -295,7 +313,7 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img src="images/SENSIBLE_33.png" alt="" class="galery__img" />
               </div>
@@ -316,13 +334,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -332,7 +351,7 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img src="images/Indoor_7+.png" alt="" class="galery__img" />
               </div>
@@ -353,13 +372,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -369,7 +389,7 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img
                   src="images/Maine_Coon_Kitten.png"
@@ -394,13 +414,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -410,7 +431,7 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img
                   src="images/Sterilised_7+.png"
@@ -435,13 +456,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -451,13 +473,9 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
-                <img
-                  src="images/Indoor.png"
-                  alt=""
-                  class="galery__img"
-                />
+                <img src="images/Indoor.png" alt="" class="galery__img" />
               </div>
               <div class="galery__center">
                 <h2 class="galery__subtitle">INDOOR 27</h2>
@@ -476,13 +494,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -492,7 +511,7 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img
                   src="images/Mature_Consult.png"
@@ -517,13 +536,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -533,13 +553,9 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
-                <img
-                  src="images/Sphynx Adult.png"
-                  alt=""
-                  class="galery__img"
-                />
+                <img src="images/Sphynx_Adult.png" alt="" class="galery__img" />
               </div>
               <div class="galery__center">
                 <h2 class="galery__subtitle">SPHYNX</h2>
@@ -558,13 +574,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -574,7 +591,7 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img
                   src="images/Mother_&_Babycat.png"
@@ -599,13 +616,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -615,13 +633,9 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
-                <img
-                  src="images/Sterilised.png"
-                  alt=""
-                  class="galery__img"
-                />
+                <img src="images/Sterilised.png" alt="" class="galery__img" />
               </div>
               <div class="galery__center">
                 <h2 class="galery__subtitle">STERILISED 37</h2>
@@ -640,13 +654,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -656,7 +671,7 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img src="images/Urinary_Care.png" alt="" class="galery__img" />
               </div>
@@ -677,13 +692,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -693,10 +709,10 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img
-                  src="images/British Shorthair Adult.png"
+                  src="images/British_Shorthair_Adult.png"
                   alt=""
                   class="galery__img"
                 />
@@ -718,13 +734,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -734,7 +751,7 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img
                   src="images/Aroma_Exigent.png"
@@ -759,13 +776,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -775,10 +793,10 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img
-                  src="images/KITTEN STERILISED.png"
+                  src="images/KITTEN_STERILISED.png"
                   alt=""
                   class="galery__img"
                 />
@@ -800,13 +818,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -816,7 +835,7 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img
                   src="images/Hairball_Care.png"
@@ -841,13 +860,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -857,7 +877,7 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img
                   src="images/British_Shorthair_Kitten.png"
@@ -882,13 +902,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -898,7 +919,7 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img src="images/Bengal_Adult.png" alt="" class="galery__img" />
               </div>
@@ -919,13 +940,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -935,10 +957,10 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img
-                  src="images/INDOOR LONG HAIR.png"
+                  src="images/INDOOR_LONG_HAIR.png"
                   alt=""
                   class="galery__img"
                 />
@@ -960,13 +982,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -976,10 +999,10 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img
-                  src="images/EXIGENT SAVOUR.png"
+                  src="images/EXIGENT_SAVOUR.png"
                   alt=""
                   class="galery__img"
                 />
@@ -1001,13 +1024,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -1017,13 +1041,9 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
-                <img
-                  src="images/PERSIAN.png"
-                  alt=""
-                  class="galery__img"
-                />
+                <img src="images/PERSIAN.png" alt="" class="galery__img" />
               </div>
               <div class="galery__center">
                 <h2 class="galery__subtitle">PERSIAN</h2>
@@ -1042,13 +1062,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -1058,10 +1079,10 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img
-                  src="images/Light Weight Care.png"
+                  src="images/Light_Weight_Care.png"
                   alt=""
                   class="galery__img"
                 />
@@ -1083,13 +1104,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -1099,10 +1121,10 @@
                 </ul>
               </div>
             </li>
-            <li class="galery__food">
+            <li class="galery__food cats filterDiv">
               <div class="galery__box">
                 <img
-                  src="images/HAIR & SKIN CARE.png"
+                  src="images/HAIR_&_SKIN_CARE.png"
                   alt=""
                   class="galery__img"
                 />
@@ -1124,13 +1146,14 @@
               <div class="galery__buttons">
                 <ul class="list">
                   <li class="galery__item--button">
-                    <a
-                      href="https://www.instagram.com/kitpes_shop/"
-                      class="link galery__button"
-                      type="button"
+                    <form
+                      action="https://www.instagram.com/kitpes_shop/"
+                      method="GET"
                     >
-                      Instagram
-                    </a>
+                      <button class="link galery__button" type="submit">
+                        Instagram
+                      </button>
+                    </form>
                   </li>
                   <li class="galery__item--button">
                     <button class="galery__button myBtn" type="button">
@@ -1157,7 +1180,7 @@
       </a>
     </div>
     <!-- callback form -->
-    <div id="magnific-modal" class="white-popup-block mfp-hide">
+    <!-- <div id="magnific-modal" class="white-popup-block mfp-hide">
       <div class="mfpcontentBorder">
         <a class="popup-modal-dismiss" href="#"
           ><i class="fa fa-times" aria-hidden="true"></i
@@ -1185,7 +1208,7 @@
             type="datetime-local"
             class="putNumber"
             name="date"
-            value="2017-12-09"
+            value="2022-06-03"
           />
           <input
             type="submit"
@@ -1196,7 +1219,7 @@
           <input type="hidden" name="formData" value="Заявка с сайта" />
         </form>
       </div>
-    </div>
+    </div> -->
 
     <div id="myModal" class="modal">
       <div class="modal-content">
@@ -1314,14 +1337,16 @@
       </div>
     </div>
 
-    <script type="text/javascript" src="./js/mobile-menu.js"></script>
+    <!-- <script src="./js/filter-button.js"></script> -->
+    <script src="./js/filter.js"></script>
+    <!-- <script type="text/javascript" src="./js/mobile-menu.js"></script> -->
     <script type="text/javascript" src="./js/modal.js"></script>
-    <script
+    <!-- <script
       type="text/javascript"
       src="./js/jquery.magnific-popup.min.js"
-    ></script>
-    <script type="text/javascript" src="./js/jquery.min.js"></script>
-    <script type="text/javascript" src="./js/main.js"></script>
-    <script type="text/javascript" src="./js/maskedinput.min.js"></script>
+    ></script> -->
+    <!-- <script type="text/javascript" src="./js/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script> -->
+    <!-- <script type="text/javascript" src="./js/maskedinput.min.js"></script> -->
   </body>
 </html>

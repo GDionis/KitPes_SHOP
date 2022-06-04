@@ -4,6 +4,7 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  position: relative;
 
   @include mq(tablet) {
     max-width: 768px;
