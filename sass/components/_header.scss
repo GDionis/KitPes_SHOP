@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   padding-top: 10px;
+  justify-content: space-between;
 
   @include mq(tablet) {
     padding-top: 20px;
