@@ -57,17 +57,6 @@ img {
   vertical-align: top;
 }
 
-.footer {
-  margin-top: 20px;
-  background-color: #2d4562;
-}
-
-.KitPes_SHOP {
-  text-align: center;
-  padding: 20px;
-  color: #fff;
-}
-
 .button__close {
   display: flex;
   justify-content: center;
@@ -1320,5 +1309,66 @@ img.mfp-img {
     padding-left: 6px;
     padding-right: 6px;
   }
+}
+
+.footer {
+  padding-top: 20px;
+  padding-bottom: 5px;
+  background-color: #2d4562;
+}
+
+.footer__text {
+  display: flex;
+  align-items: flex-end;
+  font-size: 10px;
+  line-height: 1.2;
+  color: white;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__address-text {
+  color: white;
+  padding-bottom: 8px;
+}
+
+.footer__address-text:last-child {
+  padding-bottom: 0;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer__titel {
+  color: white;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.footer__titel:last-child {
+  padding-bottom: 0;
+}
+
+.footer__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 36px;
+  width: 36px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: white;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer__link:hover, .footer__link:focus {
+  cursor: pointer;
+  background-color: #00a3ee;
 }
 /*# sourceMappingURL=main.css.map */
