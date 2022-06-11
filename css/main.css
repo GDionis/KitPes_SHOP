@@ -849,20 +849,11 @@ input.putPhone:focus {
   box-shadow: 0 0 2px 1px #ffcc00 !important;
 }
 
-#form > input.btn {
-  margin-top: 10px;
-}
-
 p.title {
   margin: 15px 10px 2px !important;
   color: #e1e1e1 !important;
   line-height: 1.4 !important;
   font-size: 22px;
-}
-
-#form {
-  border: 1px solid #e1e1e1;
-  border-radius: 4px;
 }
 
 input.btn {

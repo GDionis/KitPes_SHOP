@@ -2797,13 +2797,18 @@
           <p class="window__subtitle">
             Залишіть свої дані, ми вам передзвонимо
           </p>
-          <form>
+          <form
+            enctype="multipart/form-data"
+            method="post"
+            id="form"
+            onsubmit="send(event, 'send.php')"
+          >
             <label class="label">
               <span class="label__text">Ім'я</span>
               <input
                 class="label__input"
                 type="text"
-                name="username"
+                name="name"
                 placeholder=""
                 autofocus
               />
@@ -2816,7 +2821,7 @@
               <input
                 class="label__input"
                 type="tel"
-                name="phone_number"
+                name="text"
                 placeholder=""
               />
 
@@ -2919,6 +2924,7 @@
       </div>
     </div> -->
 
+    <script src="./js/send.js"></script>
     <script src="./js/scroll.js"></script>
     <script
       src="https://kit.fontawesome.com/a6d4e6d690.js"
