@@ -2797,19 +2797,14 @@
           <p class="window__subtitle">
             Залишіть свої дані, ми вам передзвонимо
           </p>
-          <form
-            enctype="multipart/form-data"
-            method="post"
-            id="form"
-            onsubmit="send(event, 'send.php')"
-          >
+          <form action="#" id="form">
             <label class="label">
               <span class="label__text">Ім'я</span>
               <input
-                class="label__input"
+                class="label__input _req"
                 type="text"
                 name="name"
-                placeholder=""
+                id="formName"
                 autofocus
               />
               <svg class="label__icon" width="18" height="18">
@@ -2818,12 +2813,7 @@
             </label>
             <label class="label">
               <span class="label__text">Телефон</span>
-              <input
-                class="label__input"
-                type="tel"
-                name="text"
-                placeholder=""
-              />
+              <input class="label__input _req _tel" name="tel" type="tel" />
 
               <svg class="label__icon" width="18" height="18">
                 <use href="./images/icon/modal-icon.svg#phone"></use>
@@ -2831,13 +2821,14 @@
             </label>
             <label class="label__mailing">
               <input
-                class="label__checkbox"
+                class="label__checkbox _req"
                 type="checkbox"
                 name="checkbox"
                 value="css"
                 checked
+                id="formTel"
               />
-              <span class="label__check"></span>
+              <span class="label__check _req"></span>
               <span class="label__subtitel"
                 >Погоджуюся з розсилкою та приймаю
                 <a class="label__treaty" href="./license.html">
@@ -2923,8 +2914,8 @@
         </ul>
       </div>
     </div> -->
-
-    <script src="./js/send.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- <script src="./js/send.js"></script> -->
     <script src="./js/scroll.js"></script>
     <script
       src="https://kit.fontawesome.com/a6d4e6d690.js"

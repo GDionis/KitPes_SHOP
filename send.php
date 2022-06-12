@@ -24,12 +24,12 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'zpdeni10@gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'Denys Hritsenko'; // Логин на почте
-    $mail->Password   = '10031991'; // Пароль на почте
+    $mail->Host       = 'cukden53@gmail.com'; // SMTP сервера вашей почты
+    $mail->Username   = 'Ден Цук'; // Логин на почте
+    $mail->Password   = 'den10031991'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->setFrom('mail@gmail.com', 'Имя отправителя'); // Адрес самой почты и имя отправителя
+    $mail->setFrom('cukden53@gmail.com', 'Ден Цук'); // Адрес самой почты и имя отправителя
 
     // Получатель письма
     $mail->addAddress('zpdeni10@gmail.com');  
@@ -37,6 +37,7 @@ try {
 
 // Отправка сообщения
 $mail->isHTML(true);
+
 $mail->Body = $body;    
 
 // Проверяем отравленность сообщения
