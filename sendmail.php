@@ -19,10 +19,10 @@ $mail->Subject = 'Привіт! Прийміть заявкую';
 $body = '<h1>Заявка на купівлю корму!</h1>';
 
 if (trim(!empty($_POST['name']))) {
-   $body .= '<p><strong>Имя:</strong> '.$_POST['name'].'</p>';
+   $body.= '<p><strong>Имя:</strong> '.$_POST['name'].'</p>';
 }
 if (trim(!empty($_POST['tel']))) {
-   $body .= '<p><strong>Телефон:</strong> '.$_POST['tel'].'</p>';
+   $body.= '<p><strong>Телефон:</strong> '.$_POST['tel'].'</p>';
 }
 
 $mail->Body = $body;    

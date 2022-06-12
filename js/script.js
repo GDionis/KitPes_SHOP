@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
 					error++;
 				}
 				
-			} else if (input.getAttribute('type') === "checkbox" && input.checked === false) {
+			} else if (input.getAttribute("type") === "checkbox" && input.checked === false) {
 				formAddError(input);
 				error++;
 			} else {
@@ -60,12 +60,12 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	function formAddError(input) {
-		input.parentElement.classList.add('error');
-		input.classList.add('error');
+		input.parentElement.classList.add('_error');
+		input.classList.add('_error');
 	}
 	function formRemoveError(input) {
-		input.parentElement.classList.remove('error');
-		input.classList.remove('error');
+		input.parentElement.classList.remove('_error');
+		input.classList.remove('_error');
 	}
 	function telTest(input) {
 	return /^(\+7|7|8)?[\s\-]?\(?[489][0-9]{2}\)?[\s\-]?[0-9]{3}[\s\-]?[0-9]{2}[\s\-]?[0-9]{2}$/.test(input.value);
