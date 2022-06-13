@@ -6,7 +6,7 @@ require 'phpmailer/Exception.php';
 
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
-$text = $_POST['text'];
+$tel = $_POST['tel'];
 
 // Формирование самого письма
 $body = "
@@ -24,8 +24,8 @@ try {
     $mail->Debugoutput = function($str, $level) {$GLOBALS['status'][] = $str;};
 
     // Настройки вашей почты
-    $mail->Host       = 'cukden53@gmail.com'; // SMTP сервера вашей почты
-    $mail->Username   = 'Ден Цук'; // Логин на почте
+    $mail->Host       = 'smtp.gmail.com'; // SMTP сервера вашей почты
+    $mail->Username   = 'cukden53@gmail.com'; // Логин на почте
     $mail->Password   = 'den10031991'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;

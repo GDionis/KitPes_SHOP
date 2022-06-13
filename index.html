@@ -4079,7 +4079,7 @@
           <p class="window__subtitle">
             Залишіть свої дані, ми вам передзвонимо
           </p>
-          <form action="#" id="form" class="form__body">
+          <form action="send.php" method="POST" id="form" class="form__body">
             <label class="label">
               <span class="label__text">Ім'я</span>
               <input
@@ -4099,7 +4099,8 @@
                 class="label__input _req _tel"
                 id="formTel"
                 name="tel"
-                type="tel"
+                type="text"
+                placeholder="+38 (999) 99 99 999"
               />
 
               <svg class="label__icon" width="18" height="18">
@@ -4201,8 +4202,11 @@
         </ul>
       </div>
     </div> -->
-    <script src="./js/script.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
     <!-- <script src="./js/send.js"></script> -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="./js/scroll.js"></script>
     <script
       src="https://kit.fontawesome.com/a6d4e6d690.js"
