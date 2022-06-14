@@ -4,11 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./images/pic/icon_head.png"
-      type="image/png"
-    />
+    <link rel="shortcut icon" href="./images/icon_head.png" type="image/png" />
     <title>KitPes_SHOP</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -22,12 +18,17 @@
     />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="container header__container">
         <div class="wrapper">
           <a href="./index.html" class="link logo">
-            <img class="logo__img" src="./images/icon/KitPes_LOGO.svg" alt="" />
+            <img
+              class="logo__img"
+              src="./images/icon/KitPes_LOGO.svg#KitPes"
+              alt=""
+            />
             <span class="logo__text">"KitPes"</span>
           </a>
         </div>
@@ -4079,14 +4080,17 @@
           <p class="window__subtitle">
             Залишіть свої дані, ми вам передзвонимо
           </p>
-          <form action="send.php" method="POST" id="form" class="form__body">
+
+          <!-- Форма -->
+          <form id="form" class="form__body" name="form">
             <label class="label">
-              <span class="label__text">Ім'я</span>
+              <span class="label__text">Ім'я*</span>
               <input
                 class="label__input _req"
                 type="text"
                 name="name"
                 id="formName"
+                placeholder="Ваше ім'я"
                 autofocus
               />
               <svg class="label__icon" width="18" height="18">
@@ -4094,13 +4098,13 @@
               </svg>
             </label>
             <label class="label">
-              <span class="label__text">Телефон</span>
+              <span class="label__text">Телефон*</span>
               <input
                 class="label__input _req _tel"
                 id="formTel"
-                name="tel"
+                name="phone"
                 type="text"
-                placeholder="+38 (999) 99 99 999"
+                placeholder="+380 (__) ___ __ __"
               />
 
               <svg class="label__icon" width="18" height="18">
@@ -4119,7 +4123,7 @@
               <span class="label__check"></span>
               <span class="label__subtitel"
                 >Погоджуюся з розсилкою та приймаю
-                <a class="label__treaty" href="./license.html">
+                <a target="_blank" class="label__treaty" href="./license.html">
                   Умови договору</a
                 ></span
               >
@@ -4204,9 +4208,9 @@
     </div> -->
     <!-- <script src="./js/script.js"></script> -->
     <!-- <script src="./js/send.js"></script> -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- <script src="./js/for_mail.js"></script> -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
     <script src="./js/scroll.js"></script>
     <script
       src="https://kit.fontawesome.com/a6d4e6d690.js"
@@ -4214,5 +4218,9 @@
     ></script>
     <script src="./js/filter.js"></script>
     <script type="text/javascript" src="./js/modal.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/for_mail.js"></script>
+    <script src="js/jquery.maskedinput.js"></script>
   </body>
 </html>
