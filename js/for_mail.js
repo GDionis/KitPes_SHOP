@@ -18,8 +18,11 @@ $(document).ready(function() {
 	});
 });
 
-
 // Маска ввода номера телефона (плагин maskedinput)
 $(function($){
 	$('[name="phone"]').mask("+380(99) 999-9999");
 });
+
+
+
+
