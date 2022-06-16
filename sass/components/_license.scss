@@ -1,0 +1,77 @@
+.license ol {
+  /* убираем стандартную нумерацию */
+  list-style: none;
+  /* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */
+  counter-reset: li;
+}
+.license__list li:before {
+  /* Определяем элемент, который будет нумероваться — li. Псевдоэлемент before указывает, что содержимое, вставляемое при помощи свойства content, будет располагаться перед пунктами списка. Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
+  counter-increment: li;
+  /* С помощью свойства content выводится номер пункта списка. counters() означает, что генерируемый текст представляет собой значения всех счетчиков с таким именем. Точка в кавычках добавляет разделяющую точку между цифрами, а точка с пробелом добавляется перед содержимым каждого пункта списка */
+  content: counters(li, ".") ". ";
+}
+
+.license {
+  width: 100%;
+  margin-bottom: 24px;
+  margin-top: 24px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin-bottom: 5px;
+
+    @include mq(tablet) {
+      font-size: 16px;
+      line-height: 1.3;
+    }
+
+    @include mq(desktop) {
+      font-size: 18px;
+      line-height: 1.4;
+    }
+  }
+
+  &__text {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+
+    @include mq(tablet) {
+      font-size: 14px;
+      line-height: 1.3;
+    }
+
+    @include mq(desktop) {
+      font-size: 16px;
+      line-height: 1.4;
+    }
+  }
+
+  &__item {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  &__list--level {
+    margin-top: 5px;
+
+    @include mq(tablet) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__mail {
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+
+    &:hover,
+    &:focus {
+      color: #00a3ee;
+    }
+  }
+}
