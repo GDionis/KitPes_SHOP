@@ -1,14 +1,13 @@
-const modal = document.getElementById('myModal');
+const modal = document.getElementById('modaltime');
 
-const myBtn = document.getElementsByClassName('myBtn');
-const close = document.getElementsByClassName('close')[0];
-const btnclose = document.getElementsByClassName('btnclose')[0];
+const btnopen = document.getElementsByClassName('btnopen');
+const close = document.getElementsByClassName('')[0];
 /*
 А это в цикле прокруциваем те элементы которыми мы открываем модал окно
 и обработчик события который открывет окно
 */
-for (let i = 0; i < myBtn.length; i++) {
-  myBtn[i].addEventListener('click', function() {
+for (let i = 0; i < btnopen.length; i++) {
+  btnopen[i].addEventListener('click', function() {
     openModalWindow();
   })
 }
@@ -35,5 +34,26 @@ btnclose.addEventListener('click', function () {
 
 function btncloseSubmitModalWindow() {
   modal.style.display = "none";
-}
+}   
 
+function hideAlert() {
+        $("#modaltime").fadeOut();
+        return false;
+    }
+
+    function showAlert(callback, timeout){
+        $("#modaltime").fadeIn("fast", function(){
+            if(typeof callback == "function")
+                setTimeout(callback, parseInt(timeout) > 0 ? timeout : 5000); //По умолчанию скрываем через 5 сек.
+        });
+        return false;
+    }
+
+    $(".alert").click(function(){
+        showAlert(hideAlert, 3000); //Закроет окно через 3 сек. после завершения анимации fadeIn
+    });
+
+    $(".close").click(function(){
+        hideAlert();
+    });
+    

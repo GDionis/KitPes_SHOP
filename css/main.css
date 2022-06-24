@@ -493,6 +493,67 @@ img {
   resize: none;
 }
 
+.modaltime {
+  z-index: 1;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: initial;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modalbox {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 90%;
+  min-height: 300px;
+  background-color: white;
+  box-shadow: 0 0 12px #2d456280;
+  border-radius: 8px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .modalbox {
+    min-width: 450px;
+    min-height: 400px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modalbox {
+    min-width: 450px;
+    min-height: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modalbox {
+    width: 300px;
+    height: 150px;
+    min-width: 0;
+    min-height: 0;
+  }
+}
+
+.modalbox__text {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  padding: 50px 20px;
+  text-align: center;
+}
+
 .galery {
   width: 100%;
   margin-bottom: 24px;
