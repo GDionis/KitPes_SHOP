@@ -522,17 +522,10 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .modalbox {
-    min-width: 450px;
-    min-height: 400px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .modalbox {
     min-width: 450px;
-    min-height: 300px;
+    min-height: 100px;
   }
 }
 
